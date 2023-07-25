@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div id="main">
+        <div class="maininside">
+            <div class="text">
+                <p>OBLICZ WSKAŹNIK MASY CIAŁA</p>
+            </div>
+            <div class="mainbox">
+                <div class="mb1">
+                    <div class="kafp">
+                        <div class="kafpi">
+                            <div class="kafpi1">
+                                <img src="./img/female.png" alt="kobieta">
+                            </div>
+                            <div class="kafpi2">
+                                <p>Kobieta</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kafp">
+                        <div class="kafpii">
+                            <div class="kafpi1">
+                                <img src="./img/male.png" alt="męczyzna">
+                            </div>
+                            <div class="kafpi2">
+                                <p>Mężczyzna</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb2">
+                    <div class="kafdane">
+                        <div class="custom-modal" id="customModal">
+                            <div class="modal-content">
+                              <label for="inputValue">Wprowadź nową wartość:</label>
+                              <input type="number" id="inputValue">
+                              <button onclick="changeValue()">Zatwierdź</button>
+                            </div>
+                          </div>
+                        <div class="kd1">
+                            <div class="kd1u">
+                                <p>WZROST (CM)</p>
+                            </div>
+                            <div class="kd1d">
+                                <p>WPISZ LUB PRZESUŃ SUWAKIEM</p>
+                            </div>
+
+                        </div>
+                        <div class="kd2">
+                            <!-- <div class="kd2u" id="outputDiv"> -->
+                            <div class="kd2u" id="outputDiv" onclick="openModal()">
+                                <p>165</p>
+                                <!-- <span>165</span> -->
+                            </div>
+                            <div class="kd2d">
+                                <p>cm</p>
+                            </div>
+                        </div>
+                        <div class="kd3">
+                            <input type="range" class="inputCSS" id="rangeInput" min="100" max="230">
+                        </div>
+                        <!-- <input type="range" name="points" min="1" max="10"> -->
+                    </div>
+                    <div class="kafdane">
+                        <div class="custom-modal" id="customModal2">
+                            <div class="modal-content">
+                              <label for="inputValue2">Wprowadź nową wartość:</label>
+                              <input type="number" id="inputValue2">
+                              <button onclick="changeValue2()">Zatwierdź</button>
+                            </div>
+                          </div>
+                        <div class="kd1">
+                            <div class="kd1u">
+                                <p>WAGA (CM)</p>
+                            </div>
+                            <div class="kd1d">
+                                <p>WPISZ LUB PRZESUŃ SUWAKIEM</p>
+                            </div>
+
+                        </div>
+                        <div class="kd2">
+                            <!-- <div class="kd2u" id="outputDiv"> -->
+                            <div class="kd2u2" id="outputDiv2" onclick="openModal2()">
+                                <p>110</p>
+                                <!-- <span>165</span> -->
+                            </div>
+                            <div class="kd2d">
+                                <p>kg</p>
+                            </div>
+                        </div>
+                        <div class="kd3">
+                            <input type="range" class="inputCSS" id="rangeInput2" min="20" max="200">
+                        </div>
+                        <!-- <input type="range" name="points" min="1" max="10"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <div class="btnContainer">
+                    <button id="btnOblicz" type="submit">Oblicz</button>
+                </div>
+            </div>
+            <div class="info">
+                <div class="infoi">
+                    <div class="infoi1">
+                        <div class="infoi1l">
+                            <p>BMI wynosi:</p>
+                        </div>
+                        <div class="infoi1r">
+                            <p class="bmi"></p>
+                        </div>
+                    </div>
+                    <div class="infoi2">
+                        <div class="infoi2u">
+                          <p id="colorP" class="infoOtylosc">1. stopien otylosci</p>
+                        </div>
+                        <div class="infoi2d">
+                          <!-- Używamy elementu <span> dla pierwszej linii tekstu -->
+                          <span id="bmiWM">Optymalne BMI to: 20,1 - 25,9</span>
+                          <!-- Używamy elementu <p> dla reszty tekstu -->
+                          <p>Twoja masa ciała powinna wynosić od: <span id="odMasa">80</span> do: <span id="doMasa">100</span> kg.</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="infoi2">
+                        <div class="infoi2u">
+                            <p class="infoOtylosc">1. stopien otylosci</p>
+                        </div>
+                        <div class="infoi2d">
+                            <p>Optymalne BMI to:</p><p>18,5 - 24,9</p><br><br>
+                            <p>Twoja masa ciała powinna wysosić od: </p><span id="odMasa">80</span><p> do:</p><span id="doMasa">100</span><p> kg.</p>
+                        </div>
+                    </div> -->
+                    <!-- <div class="infoi3">3</div> -->
+                </div>
+                <p class="wzrost">1</p>
+                <p class="waga">2</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

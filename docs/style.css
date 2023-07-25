@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: rgb(73, 58, 88); */
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(73, 58, 88); */
+    background-image: url("./img/bc.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.maininside{
+    width: 40vw;
+    height: 95vh;
+    /* background-color: rgb(55, 124, 192); */
+    /* background-color: #3595bc;  stare*/
+    background-color: #000000;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ffffff;
+}
+.text{
+    flex: 1;
+    /* background-color: rgb(155, 73, 73); */
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text p{
+    color: #fff;
+    font-size: 3vh;
+    font-weight: 600;
+}
+
+/****************************************/
+/*               MAIN PART              */
+/****************************************/
+
+.mainbox{
+    flex: 5;
+    /* background-color: rgb(179, 38, 148); */
+    /* background-color: #595d58; */
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.mb1{
+    /* background-color: #38269e; */
+    flex: 1;
+    margin: 1%;
+    display: flex;
+}
+.mb2{
+    /* background-color: #38269e; */
+    flex: 2;
+    margin: 1%;
+    display: flex;
+}
+.kafp{
+    /* background-color: #1e6a88; */
+    /* opacity: 0.9; */
+    opacity: 1;
+    flex: 1;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #469bbc;
+    /* border: 1px solid #a210a4; */
+    /* border: 1px solid #cc18d6; */
+    border-radius: 1vw;
+
+}
+.kafp:hover{
+    opacity: 0.6;
+}
+
+
+.kafpi{
+    /* background-color: #000000; */
+    width: 45%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.kafpii{
+    /* background-color: #000000; */
+    width: 45%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.kafpi1{
+    /* background-color: #938282; */
+    flex: 4;
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kafpi1 img{
+    max-width: 90%;
+    max-height: 90%;
+}
+.kafpi2{
+    /* background-color: #35ae3b; */
+    flex: 1;
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kafpi2 p{
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/********************************/
+
+.kafdane{
+    /* background-color: #24718f; */
+    flex: 1;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #469bbc; */
+    /* background-color: #469bbc;
+    border: 1px solid #3b7a93; */
+
+    background-color: #469bbc;
+    /* border: 1px solid #a210a4; */
+    /* border: 1px solid #cc18d6; */
+    border-radius: 1vw;
+}
+.kd1{
+    flex: 1;
+    /* background-color: #989c2a; */
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.kd1u{
+    /* background-color: #bd1919; */
+    flex: 1;
+    margin: 1%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+}
+.kd1d{
+    /* background-color: #474d4c; */
+    flex: 1;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.kd2{
+    flex: 1;
+    /* background-color: #11f7ff; */
+    margin: 1%;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kd2u{
+    flex: 1;
+    /* background-color: #960e0e; */
+    margin: 1%;
+    height: 98%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.kd2u2{
+    flex: 1;
+    /* background-color: #960e0e; */
+    margin: 1%;
+    height: 98%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+/* Style niestandardowego okna dialogowego */
+.custom-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+  }
+
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #dbdbdb;
+    border-radius: 5px;
+  }
+
+/******************/
+/* .kd2u p{
+    font-size: 7vh;
+
+} */
+.kd2d{
+    flex: 1;
+    /* background-color: #c56b1d; */
+    margin: 1%;
+    height: 98%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.kd2d p{
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-size: 2vh;
+
+}
+
+
+
+
+
+
+
+
+
+.kd3{
+    flex: 1;
+    /* background-color: #000000; */
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputCSS{
+    -webkit-appearance: none;
+    width: 80%;
+    height: 1vh;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.inputCSS:hover {
+    opacity: 1;
+  }
+.inputCSS::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 30px;
+    background: #ff0000;
+    /* background: #000000; */
+    cursor: pointer;
+    border-radius: 10%;
+}
+.inputCSS::-moz-range-thumb {
+  width: 10px;
+  height: 40px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************/
+/*                 BUTTON               */
+/****************************************/
+
+.button{
+    flex: 1;
+    /* background-color: rgb(52, 169, 137); */
+    margin: 1%;
+    display: none;
+}
+.info{
+    display: none;
+    flex: 4;
+    /* background-color: rgb(184, 198, 33); */
+    margin: 1%;
+    justify-content: center;
+}
+.infoi{
+    display: flex;
+    /* background-color: #a72d2d; */
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+}
+.infoi1{
+    /* background-color: #11a7d8; */
+    /* background-color: #595d58; */
+    margin: 1%;
+    flex: 2;
+    display: flex;
+}
+.infoi1l{
+    /* background-color: #36ba24; */
+    flex: 1;
+    margin: 1%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #fff;
+    font-size: 3vh;
+}
+.infoi1r{
+    /* background-color: #c1d117; */
+    flex: 1;
+    margin: 1%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: #fff;
+    font-size: 7vh;
+}
+.wzrost, .waga{
+    display: none;
+}
+
+
+
+
+.infoi2{
+    /* background-color: #231aca; */
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.infoi2u{
+    /* background-color: #36ba24; */
+    /* background-color: #595d58; */
+    flex: 1;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.infoi2d{
+    /* background-color: #7f14a9; */
+    /* background-color: #595d58; */
+    flex: 1;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    flex-direction: column;
+    font-size: 2vh;
+}
+
+
+/* .infoi3{
+    background-color: #7f14a9;
+    flex: 1;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************/
+/*            BUTTON Oblicz             */
+/****************************************/
+.btnContainer{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#btnOblicz{
+    width: 10vw;
+    height: 4vh;
+    background-color: #11a7d8;
+    border-radius: 10%;
+    font-size: 2vh;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+#btnOblicz:hover{
+    background-color: #2e2e2e;
+    color: #fff;
+}
+
+
+/****************************************/
+/*            MEDIA QUERIES             */
+/****************************************/
+
+@media only screen and (max-width:1500px) {
+    .kd1d p{
+        font-size: 1.2vh;
+    }
+    /* .text p{
+        font-size: 2vh;
+        font-weight: 600;
+    } */
+    .infoi2d{
+        font-size: 1.8vh;
+    }
+    .inputCSS::-webkit-slider-thumb {
+        height: 3.5vh;
+    }
+    .kd2d p{
+        margin-bottom: 7%;
+        font-size: 3vh;
+    }
+}
+@media only screen and (max-width:1111px) {
+    .maininside{
+        width: 60vw;
+    }
+}
+@media only screen and (max-width:900px) {
+    .maininside{
+        width: 80vw;
+    }
+}
+@media only screen and (max-width:500px) {
+    .maininside{
+        width: 90vw;
+    }
+    .kafpi, .kafpii{
+        width: 80%;
+    }
+    .text p{
+        font-size: 2.5vh;
+        font-weight: 600;
+    }
+    /*button*/
+    #btnOblicz{
+        width: 40vw;
+    }
+    .infoi{
+        width: 100%;
+    }
+    .infoi2d{
+        font-size: 1.6vh;
+    }
+    .inputCSS::-webkit-slider-thumb {
+        height: 3.5vh;
+    }
+    .kd1d p{
+        font-size: 1.1vh;
+        align-self: center;
+    }
+    .kd2d p{
+        margin-bottom: 10%;
+        font-size: 4vh;
+    }
+}
+@media only screen and (max-width:400px) {
+    .maininside{
+        width: 98vw;
+    }
+    .text p{
+        font-size: 2vh;
+        font-weight: 600;
+    }
+    .infoi2d{
+        font-size: 1.5vh;
+    }
+    .kd1d p{
+        font-size: 1vh;
+        align-self: center;
+    }
+    .kd2d p{
+        margin-bottom: 20%;
+        font-size: 3vh;
+    }
+}
+@media only screen and (max-width:330px) {
+
+    .text p{
+        font-size: 2vh;
+        font-weight: 600;
+    }
+    .infoi2d{
+        font-size: 1.3vh;
+    }
+    .kd1d p{
+        font-size: 0.94vh;
+        align-self: center;
+    }
+    .infoi1l{
+        font-size: 2.5vh;
+    }
+    .kd2d p{
+        margin-bottom: 43%;
+        font-size: 2vh;
+    }
+}
+/*style info box*/
+@media only screen and (max-width:650px) {
+    .infoi2d{
+        font-size: 1.6vh;
+    }
+}
+@media only screen and (max-width:580px) {
+    .infoi2d{
+        font-size: 1.5vh;
+    }
+}
+@media only screen and (max-width:550px) {
+    .infoi2d{
+        font-size: 1.3vh;
+    }
+}
+
+
+
